@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="200dp">
+
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="272dp"
+        android:layout_height="112dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:padding="10dp"
+        android:background="@drawable/border"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/buttonAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonNext"
+        android:layout_alignBottom="@+id/buttonNext"
+        android:layout_toStartOf="@+id/buttonNext"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Answer"
+        android:textColor="@android:color/background_light"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="136dp" />
+
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewData"
+        android:layout_below="@+id/textViewData"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Cancel"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="136dp" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonClose"
+        android:layout_alignBottom="@+id/buttonClose"
+        android:layout_toStartOf="@+id/buttonClose"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Next"
+        android:textColor="@android:color/background_light"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="136dp" />
+</RelativeLayout>
